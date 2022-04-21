@@ -1,11 +1,12 @@
 import './App.css';
-import Login from './components/Login/Login';
+import AppRouter from './components/AppRouter/AppRouter';
 
 function App() {
+
   return (
     //JSX
     <div className="App">
-        <Login />
+        <AppRouter />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 
 import { forwardRef, useState } from 'react' //Hooks
+import { useNavigate } from 'react-router-dom';
 import TextField from '@mui/material/TextField';
 import { ValidatorForm, TextValidator } from 'react-material-ui-form-validator';
 import axios from 'axios'
@@ -25,6 +26,7 @@ const Login = () => {
     });
 
     const { status, message, type } = showMessage 
+    const navigate = useNavigate()
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -37,6 +39,8 @@ const Login = () => {
                 message: 'El usuario se logueo correctamente!',
                 type: 'success'
             })
+            localStorage.setItem("token", res.data.token)
+            navigate('/listado')
         })
         .catch((err) => {
             console.log("Hubo un error en la llamada: ", err)
@@ -56,6 +60,7 @@ const Login = () => {
             status: false
         })
     }
+    
     const handleChange = (e) => {
         console.log(e.target.name)
         setFormData({ 
