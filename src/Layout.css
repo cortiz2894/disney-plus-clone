@@ -1,0 +1,5 @@
+.general-container {
+    min-height: calc(100vh - 309px);
+    float: left;
+    width: 100%;
+}

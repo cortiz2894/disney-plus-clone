@@ -1,4 +1,4 @@
-import './App.css';
+import './Layout.css';
 import AppRouter from './components/AppRouter/AppRouter';
 
 function App() {

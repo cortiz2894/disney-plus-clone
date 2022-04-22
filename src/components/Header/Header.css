@@ -1,0 +1,21 @@
+.header-disney {
+    float: left;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    padding: 10px 20px;
+
+}
+.container-logo {
+    width: 80px;
+    
+}
+.container-logo img {width: 100%;}
+
+header.header-disney navbar ul {margin: 0px;padding: 0;list-style: none;display: flex;height: 100%;align-items: center;}
+
+header.header-disney navbar ul li {margin-right: 10px;}
+
+header.header-disney navbar ul li * {color: white;text-decoration: none;}
+
+navbar {margin-left: 50px;}
