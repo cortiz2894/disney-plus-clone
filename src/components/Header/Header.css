@@ -2,13 +2,13 @@
     float: left;
     width: 100%;
     background-color: black;
-    display: flex;
     padding: 10px 20px;
-
+    position: fixed;
+    top: 0px;
 }
 .container-logo {
     width: 80px;
-    
+    float: left;
 }
 .container-logo img {width: 100%;}
 
@@ -16,6 +16,70 @@ header.header-disney navbar ul {margin: 0px;padding: 0;list-style: none;display:
 
 header.header-disney navbar ul li {margin-right: 10px;}
 
-header.header-disney navbar ul li * {color: white;text-decoration: none;}
+header.header-disney navbar ul li * {
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: 'metropolisbold';
+}
 
-navbar {margin-left: 50px;}
+
+navbar {
+    margin-left: 50px;
+}
+
+header.header-disney navbar ul li svg {
+    font-size: 17px;
+    margin-right: 8px;
+}
+
+header.header-disney navbar ul li a {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+}
+
+header.header-disney navbar ul li a:before {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    height: 2px;
+    left: 24px;
+    background: white;
+    width: 0;
+    transition: all 0.3s ease-out;
+    opacity: 0;
+}
+
+
+header.header-disney navbar ul li a {
+    position: relative;
+}
+
+header.header-disney navbar ul li a:hover:before {
+    width: calc(100% - 24px);
+    opacity: 1;
+}
+
+.userAvatar {
+    width: 50px;
+    float: right;
+}
+
+.userAvatar img {
+    width: 100%;
+}
+
+.userAvatar button {
+    background: none;
+    border: none;
+    padding: 0px;
+}
+
+header.header-disney navbar {
+    height: 100%;
+    margin-top: 18px;
+    float: left;
+}

@@ -40,7 +40,7 @@ const Login = () => {
                 type: 'success'
             })
             localStorage.setItem("token", res.data.token)
-            navigate('/listado')
+            navigate('/')
         })
         .catch((err) => {
             console.log("Hubo un error en la llamada: ", err)

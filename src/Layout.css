@@ -1,5 +1,34 @@
+@font-face {
+    font-family: 'metropolisbold';
+    src: url('./fonts/metropolis-bold-webfont.woff2') format('woff2'),
+         url('./fonts/metropolis-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'metropolisregular';
+    src: url('./fonts/metropolis-regular-webfont.woff2') format('woff2'),
+         url('./fonts/metropolis-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'metropolissemi_bold';
+    src: url('./fonts/metropolis-semibold-webfont.woff2') format('woff2'),
+         url('./fonts/metropolis-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 .general-container {
     min-height: calc(100vh - 309px);
-    float: left;
     width: 100%;
+    margin-top: 78px;
+}
+
+p,a,span,h1,h2,h3,h4 {
+    font-family: 'metropolisregular';
 }

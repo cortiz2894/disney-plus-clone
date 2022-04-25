@@ -3,14 +3,20 @@ import Listado from "../components/Listado/Listado"
 import Header from "../components/Header/Header"
 import Footer from "../components/Footer/Footer"
 
+import Container from '@mui/material/Container';
+import CssBaseline from '@mui/material/CssBaseline';
+
+
 const HomePage = () => {
     return(
-        <div className="home-page">
+        <div className="home-page" style={{margin: '0 auto'}}>
             <Header />
-            <main className="general-container">
+            <CssBaseline />
+            <Container className="general-container">
+                
                 <Title /> 
                 <Listado />
-            </main>
+            </Container>
             <Footer />
         </div>
     )
