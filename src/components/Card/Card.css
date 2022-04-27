@@ -1,0 +1,6 @@
+a.card-movie-item img {
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 2px 7px #686868;
+    width: 100%;
+}

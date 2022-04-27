@@ -5,7 +5,7 @@ const Footer = () => {
         <footer>
             <div>
                 <img src="./logo.svg" alt="logo footer" />
-                <navbar className="navBar-footer">
+                <nav className="navBar-footer">
                     <ul>
                         <li><Link to="/">Politicas Privacidad</Link></li>
                         <li><Link to="/">Acuerdo subscripcion</Link></li>
@@ -18,7 +18,7 @@ const Footer = () => {
                     <span>
                     © Disney. Todos los derechos reservados.
                     </span>
-                </navbar>
+                </nav>
             </div>
         </footer>
     )

@@ -30,7 +30,7 @@ const Header = () => {
             <div className="container-logo">
                 <img src="./logo.svg" alt="" />
             </div>
-            <navbar>
+            <nav>
                 <ul>
                     <li><Link to='/'><HomeIcon fontSize={'large'}/> Inicio</Link></li>
                     <li><Link to='/peliculas'><LocalMoviesIcon fontSize={'large'}/>Peliculas</Link></li>
@@ -39,7 +39,7 @@ const Header = () => {
                     <li><Link to='/whishlist'><StarIcon fontSize={'large'}/>Favoritos</Link></li>
                     <li><Link to='/originales'><AddIcon fontSize={'large'}/>Originales</Link></li>
                 </ul>
-            </navbar>
+            </nav>
             <div className='userAvatar'>
                
                 <button

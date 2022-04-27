@@ -9,12 +9,12 @@ footer div {display: flex;flex-direction: column;/* justify-content: center; */t
 
 footer div img {width: 80px;}
 
-navbar.navBar-footer {margin: 0px;}
+nav.navBar-footer {margin: 0px;}
 
-navbar.navBar-footer ul {margin: 0px;padding: 0;list-style: none;display: flex;justify-content: center;margin-top: 20px;}
+nav.navBar-footer ul {margin: 0px;padding: 0;list-style: none;display: flex;justify-content: center;margin-top: 20px;}
 
-navbar.navBar-footer ul * {color: white;text-decoration: none;font-size: 11px;}
+nav.navBar-footer ul * {color: white;text-decoration: none;font-size: 11px;}
 
-navbar.navBar-footer ul li {margin-right: 10px;}
+nav.navBar-footer ul li {margin-right: 10px;}
 
 footer p, footer span {color: white;font-size: 11px;width: 300px;text-align: center;margin: 15px auto;}

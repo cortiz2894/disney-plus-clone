@@ -12,11 +12,11 @@
 }
 .container-logo img {width: 100%;}
 
-header.header-disney navbar ul {margin: 0px;padding: 0;list-style: none;display: flex;height: 100%;align-items: center;}
+header.header-disney nav ul {margin: 0px;padding: 0;list-style: none;display: flex;height: 100%;align-items: center;}
 
-header.header-disney navbar ul li {margin-right: 10px;}
+header.header-disney nav ul li {margin-right: 10px;}
 
-header.header-disney navbar ul li * {
+header.header-disney nav ul li * {
     color: white;
     font-size: 13px;
     text-decoration: none;
@@ -26,22 +26,22 @@ header.header-disney navbar ul li * {
 }
 
 
-navbar {
+nav {
     margin-left: 50px;
 }
 
-header.header-disney navbar ul li svg {
+header.header-disney nav ul li svg {
     font-size: 17px;
     margin-right: 8px;
 }
 
-header.header-disney navbar ul li a {
+header.header-disney nav ul li a {
     display: flex;
     align-items: center;
     margin-right: 25px;
 }
 
-header.header-disney navbar ul li a:before {
+header.header-disney nav ul li a:before {
     content: "";
     position: absolute;
     bottom: -7px;
@@ -54,11 +54,11 @@ header.header-disney navbar ul li a:before {
 }
 
 
-header.header-disney navbar ul li a {
+header.header-disney nav ul li a {
     position: relative;
 }
 
-header.header-disney navbar ul li a:hover:before {
+header.header-disney nav ul li a:hover:before {
     width: calc(100% - 24px);
     opacity: 1;
 }
@@ -78,7 +78,7 @@ header.header-disney navbar ul li a:hover:before {
     padding: 0px;
 }
 
-header.header-disney navbar {
+header.header-disney nav {
     height: 100%;
     margin-top: 18px;
     float: left;
