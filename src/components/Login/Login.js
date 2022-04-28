@@ -1,17 +1,11 @@
 
-import { forwardRef, useState } from 'react' //Hooks
+import { useState } from 'react' //Hooks
 import { useNavigate } from 'react-router-dom';
 import TextField from '@mui/material/TextField';
 import { ValidatorForm, TextValidator } from 'react-material-ui-form-validator';
 import axios from 'axios'
 import setLogin from '../../services/Login.service';
-
-import Snackbar from '@mui/material/Snackbar';
-import MuiAlert from '@mui/material/Alert';
-
-const Alert = forwardRef(function Alert(props, ref) {
-    return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
-});
+import SnackBarMessage from '../SnackBarMessage/SnackBarMessage'
 
 const Login = () => {
     //State
@@ -26,6 +20,7 @@ const Login = () => {
     });
 
     const { status, message, type } = showMessage 
+
     const navigate = useNavigate()
 
     const handleSubmit = (e) => {
@@ -95,11 +90,7 @@ const Login = () => {
                 />
                 <button type="submit">Ingresar</button>
             </ValidatorForm>
-            <Snackbar open={status} autoHideDuration={6000} onClose={handleClose}>
-                <Alert onClose={handleClose} severity={type} >
-                    {message}
-                </Alert>
-            </Snackbar>
+            <SnackBarMessage estado={status} handleClose={handleClose} type={type} message={message}/>
         </div>
     )
 }
