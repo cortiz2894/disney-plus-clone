@@ -43,6 +43,7 @@ const Listado = () => {
             })
         })
     }, [])
+    
     const { status, message, type } = showMessage
 
     return(

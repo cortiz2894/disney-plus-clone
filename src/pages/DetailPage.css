@@ -1,0 +1,36 @@
+.header-detail-movie {
+    width: 100%;
+    position: relative;
+    min-height: 80vh;
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.header-detail-movie__info {
+    width: 50%;
+}
+
+.header-detail-movie__info h1 {
+    font-family: 'metropolisbold';
+    font-size: 52px;
+    margin-top: 0px;
+}
+
+.header-detail-movie__info p {
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.header-detail-movie__info .btn-detail {
+    background: white;
+    color: #1a1d29;
+    padding: 10px 23px;
+    font-family: 'metropolisbold';
+}
+
+.header-detail-movie__info .btn-detail svg {
+    color: #1a1d29;
+    font-size: 34px;
+}

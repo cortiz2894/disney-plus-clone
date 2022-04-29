@@ -1,6 +1,7 @@
 import './Header.css'
 import { useState } from 'react';
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+
 //material-ui
 import HomeIcon from '@mui/icons-material/Home';
 import SearchIcon from '@mui/icons-material/Search';
@@ -14,6 +15,7 @@ import MenuItem from '@mui/material/MenuItem';
 //services
 
 const Header = () => {
+    const navigate = useNavigate()
     const [anchorEl, setAnchorEl] = useState(null);
     const open = Boolean(anchorEl);
 
@@ -24,6 +26,11 @@ const Header = () => {
     const handleClose = () => {
       setAnchorEl(null);
     };
+
+    const logout = () => {
+        localStorage.removeItem("token")
+        navigate('/login')
+    }
 
     return(
         <header className='header-disney'>
@@ -61,7 +68,9 @@ const Header = () => {
                 >
                     <MenuItem onClick={handleClose}>Profile</MenuItem>
                     <MenuItem onClick={handleClose}>My account</MenuItem>
-                    <MenuItem onClick={handleClose}>Logout</MenuItem>
+                    <MenuItem onClick={handleClose}>
+                        <button onClick={logout}>Logout</button>
+                    </MenuItem>
                 </Menu>
             </div>
         </header>

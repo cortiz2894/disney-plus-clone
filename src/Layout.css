@@ -23,12 +23,25 @@
 
 }
 
+.App {
+    background: rgb(26, 29, 41);
+}
+
 .general-container {
+    padding: 0 calc(3.5vw + 24px) !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
     min-height: calc(100vh - 309px);
-    width: 100%;
-    margin-top: 78px;
+    margin-top: 76px;
 }
 
 p,a,span,h1,h2,h3,h4 {
     font-family: 'metropolisregular';
+    color: white;
+}
+
+form {
+    background: white;
 }
