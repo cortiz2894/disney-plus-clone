@@ -7,9 +7,6 @@
     background-repeat: no-repeat;
 }
 
-.header-detail-movie__info {
-    width: 50%;
-}
 
 .header-detail-movie__info h1 {
     font-family: 'metropolisbold';
@@ -28,9 +25,42 @@
     color: #1a1d29;
     padding: 10px 23px;
     font-family: 'metropolisbold';
+
 }
 
 .header-detail-movie__info .btn-detail svg {
     color: #1a1d29;
     font-size: 34px;
+
+}
+
+.container-spinner {
+    width: 100%;
+    height: calc(100vh - 365px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-detail-movie__info:before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(26,29,41,1) 50%, rgba(0,0,0,0) 100%);
+    z-index: 0;
+}
+
+.header-detail-movie__info * {
+    z-index: 1;
+    position: relative;
+}
+
+.header-detail-movie__info {
+    padding: 0 calc(24px + 3.5vw);
+    width: 50%;
+}
+
+.MuiTabs-flexContainer *, .MuiTabs-flexContainer .Mui-selected {
+    color: white;
 }

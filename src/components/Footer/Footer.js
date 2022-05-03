@@ -4,7 +4,7 @@ const Footer = () => {
     return(
         <footer>
             <div>
-                <img src="./logo.svg" alt="logo footer" />
+                <img src="/logo.svg" alt="logo footer" />
                 <nav className="navBar-footer">
                     <ul>
                         <li><Link to="/">Politicas Privacidad</Link></li>

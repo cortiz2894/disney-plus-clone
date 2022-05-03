@@ -1,7 +1,6 @@
 import './Header.css'
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom'
-
 //material-ui
 import HomeIcon from '@mui/icons-material/Home';
 import SearchIcon from '@mui/icons-material/Search';
@@ -35,7 +34,7 @@ const Header = () => {
     return(
         <header className='header-disney'>
             <div className="container-logo">
-                <img src="./logo.svg" alt="" />
+                <img src={'/logo.svg'} alt="" />
             </div>
             <nav>
                 <ul>
