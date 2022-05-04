@@ -1,0 +1,20 @@
+.container-results > .swiper-slide {
+    width: calc(20% - 16px);
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    transition: all 0.4s ease;
+}
+
+.container-results > .swiper-slide:nth-of-type(5n) {
+    margin-right: 0px;
+}
+
+@media(max-width: 900px) {
+    .container-results > .swiper-slide {
+        width: calc(50% - 16px);
+    }
+    .container-results > .swiper-slide:nth-of-type(2n) {
+        margin-right: 0px;
+    }
+}

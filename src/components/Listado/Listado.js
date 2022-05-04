@@ -9,8 +9,8 @@ import SnackBarMessage from "../SnackBarMessage/SnackBarMessage";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/pagination";
-import { Pagination } from "swiper";
+import "swiper/css/navigation";
+import { Navigation } from "swiper";
 // Services
 import getMovies from '../../services/Movies.service'
 
@@ -52,11 +52,9 @@ const Listado = () => {
             <Swiper
                 slidesPerView={5}
                 spaceBetween={20}
-                pagination={{
-                clickable: true,
-                }}
-                modules={[Pagination]}
+                modules={[Navigation]}
                 className="mySwiper"
+                navigation={true}
             >
             {
                 movies.length == 0 ? (
@@ -67,9 +65,7 @@ const Listado = () => {
                             const { original_title, poster_path, id } = movie
                             return(
                                 <SwiperSlide key={id}>
-                                    <Link to={`/movie/${id}`} className='card-movie-item'>
-                                        <img src={`https://image.tmdb.org/t/p/w500/${poster_path}`} alt="img movie"/>
-                                    </Link>
+                                    <Card id={id} poster={poster_path} />
                                 </SwiperSlide>
                             )
                         })}

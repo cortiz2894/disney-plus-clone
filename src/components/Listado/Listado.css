@@ -23,10 +23,11 @@ a.card-movie-item img {
 }
 
 .swiper-slide {
-    height: 139px !important;
+    height: 185px !important;
     border-radius: 4px;
     box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px, rgb(0 0 0 / 73%) 0px 16px 10px -10px;
     overflow: hidden;
+    transition: all 0.4s ease;
 }
 
 a.card-movie-item img {
@@ -34,4 +35,28 @@ a.card-movie-item img {
     overflow: hidden;
     box-shadow: 0px 2px 7px #686868;
     width: 100%;
+}
+
+.container-section-list {
+    margin-top: 20px;
+    float: left;
+    width: 100%;
+}
+
+.container-section-list h1 {
+    font-size: 20px;
+    color: #f9f9f9;
+    margin-bottom: 10px;
+    font-family: 'metropolisregular';
+    margin-top: 0px;
+}
+
+
+.swiper-slide.swiper-slide-active {opacity: 1;}
+
+.swiper-slide.swiper-slide-active + .swiper-slide, 
+.swiper-slide.swiper-slide-active + .swiper-slide + .swiper-slide, 
+.swiper-slide.swiper-slide-active + .swiper-slide + .swiper-slide + .swiper-slide,
+.swiper-slide.swiper-slide-active + .swiper-slide + .swiper-slide + .swiper-slide + .swiper-slide {
+    opacity: 1;
 }

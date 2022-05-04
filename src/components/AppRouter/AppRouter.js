@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Login from '../Login/Login'
 import HomePage from '../../pages/HomePage'
 import DetailPage from '../../pages/DetailPage'
+import SearchPage from '../../pages/SearchPage'
 
 const AppRouter = () => {
 
@@ -13,7 +14,7 @@ const AppRouter = () => {
                 <Route path="/movie/:id/" element={<DetailPage />}/>
                 <Route path="/peliculas" element={<HomePage />}/>
                 <Route path="/series" element={<HomePage />}/>
-                <Route path="/search" element={<HomePage />}/>
+                <Route path="/search" element={<SearchPage />}/>
                 <Route path="/whishlist" element={<HomePage />}/>
                 <Route path="/originales" element={<HomePage />}/>
             </Routes>
