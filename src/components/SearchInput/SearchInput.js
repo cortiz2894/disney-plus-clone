@@ -1,11 +1,9 @@
 import './SearchInput.css'
-import { useState } from 'react'
 
-const SearchInput = () => {
-    const [searchValue, setSearchValue] = useState('')
+const SearchInput = ({value, updateValue}) => {
 
     const handleChange = (e) => {
-        setSearchValue(e.target.value)
+        updateValue(e.target.value)
     }
 
     return(
@@ -14,7 +12,7 @@ const SearchInput = () => {
                 className="search-field" 
                 type="text" 
                 name="searchField" 
-                value={searchValue} 
+                value={value}
                 onChange={handleChange}
                 placeholder="Título, personaje o genero"
             />
