@@ -6,6 +6,8 @@ import Container from '@mui/material/Container';
 import CssBaseline from '@mui/material/CssBaseline';
 import SearchInput from '../components/SearchInput/SearchInput'
 
+//useContext / Redux / useReducer / useCallback / useMemo / TypeScript // UniTest Jest - React Testing library
+
 const SearchPage = () => {
     const [searchValue, setSearchValue] = useState('')
 
