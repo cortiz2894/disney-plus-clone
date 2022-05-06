@@ -13,6 +13,7 @@ import CircularProgress from '@mui/material/CircularProgress';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
+import AddIcon from '@mui/icons-material/Add';
 
 //Services
 import { getMovie } from "../services/Movies.service";
@@ -47,6 +48,7 @@ const DetailPage = () => {
     });
     const [loader, setLoader] = useState(true)
     const [tabValue, setTabValue] = useState(0);
+    const [miList, setMiList] = useState(JSON.parse(localStorage.getItem('miLista')) || [])
 
     const TabChange = (event, newValue) => {
         setTabValue(newValue);
@@ -80,6 +82,17 @@ const DetailPage = () => {
         })
     }, [])
 
+    const addMovieToList = (movie) => {
+        const exist = miList.find(movieList => movieList.id === movie.id)
+        if(exist) {
+            const filterList = miList.filter(movieList => movieList.id !== movie.id)
+            localStorage.setItem("miLista", JSON.stringify(filterList))
+        } else {
+            setMiList([...miList, movie])
+            localStorage.setItem("miLista", JSON.stringify([...miList, movie]))
+        }
+    }
+
     return(
         
         <>
@@ -104,6 +117,13 @@ const DetailPage = () => {
                                     startIcon={<PlayArrowIcon />}
                                 >
                                     Ver ahora
+                                </Button>
+                                <Button 
+                                    variant="outlined"
+                                    className="btn-add-list"
+                                    onClick={() => addMovieToList(movieInfo)}
+                                >
+                                    <AddIcon />
                                 </Button>
                                 <p>{movieInfo.overview}</p>
                                 <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>

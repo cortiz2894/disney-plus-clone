@@ -24,7 +24,9 @@
 .mySwiper:hover .swiper-button-next:after, .mySwiper:hover .swiper-button-prev:after {
     opacity: 1;
 }
-
+.container-results .swiper-slide {
+    opacity: 1;
+}
 
 @media(max-width: 1100px) {
     .container-results > .swiper-slide {

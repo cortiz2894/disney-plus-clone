@@ -16,7 +16,7 @@ const SearchPage = () => {
             <Container className="general-container">
                 <SearchInput value={searchValue} updateValue={setSearchValue}/>
                 <h2>Explorar</h2>
-                <Results searchValue={searchValue}/>
+                <Results searchValue={searchValue} listPage={false}/>
             </Container>
             <Footer />
         </div>

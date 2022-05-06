@@ -42,7 +42,7 @@ const Header = () => {
                     <li><Link to='/peliculas'><LocalMoviesIcon fontSize={'large'}/>Peliculas</Link></li>
                     <li><Link to='/series'><LiveTvIcon fontSize={'large'}/>Series</Link></li>
                     <li><Link to='/search'><SearchIcon fontSize={'large'}/>Busqueda</Link></li>
-                    <li><Link to='/whishlist'><StarIcon fontSize={'large'}/>Favoritos</Link></li>
+                    <li><Link to='/whishlist'><StarIcon fontSize={'large'}/>Mi Lista</Link></li>
                     <li><Link to='/originales'><AddIcon fontSize={'large'}/>Originales</Link></li>
                 </ul>
             </nav>

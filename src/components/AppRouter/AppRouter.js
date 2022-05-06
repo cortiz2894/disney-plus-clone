@@ -3,6 +3,7 @@ import Login from '../Login/Login'
 import HomePage from '../../pages/HomePage'
 import DetailPage from '../../pages/DetailPage'
 import SearchPage from '../../pages/SearchPage'
+import MiLista from '../../pages/MiLista'
 
 const AppRouter = () => {
 
@@ -15,7 +16,7 @@ const AppRouter = () => {
                 <Route path="/peliculas" element={<HomePage />}/>
                 <Route path="/series" element={<HomePage />}/>
                 <Route path="/search" element={<SearchPage />}/>
-                <Route path="/whishlist" element={<HomePage />}/>
+                <Route path="/whishlist" element={<MiLista />}/>
                 <Route path="/originales" element={<HomePage />}/>
             </Routes>
         </BrowserRouter>

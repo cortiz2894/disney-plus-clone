@@ -15,7 +15,7 @@ import { Navigation } from "swiper";
 import getMovies from '../../services/Movies.service'
 
 
-const Listado = () => {
+const Listado = ({searchType , title}) => {
     const [movies, setMovies] = useState([])
     const [showMessage, setShowMessage] = useState({
         status: false,
@@ -31,7 +31,7 @@ const Listado = () => {
     }
 
     useEffect( () => {
-        getMovies()
+        getMovies(searchType)
         .then( (res) => {
             setMovies(res.data.results)
         })
@@ -48,7 +48,7 @@ const Listado = () => {
 
     return(
         <div className="container-section-list">
-            <h1>Recomendaciones para ti</h1>
+            <h1>{title}</h1>
             <Swiper
                 slidesPerView={5}
                 spaceBetween={20}

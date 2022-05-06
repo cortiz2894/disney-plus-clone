@@ -64,3 +64,7 @@
 .MuiTabs-flexContainer *, .MuiTabs-flexContainer .Mui-selected {
     color: white;
 }
+
+.MuiTabs-root .MuiTabs-flexContainer > button {color: white;font-size: 20px;font-family: 'metropolisbold';background: none;}
+
+.MuiTabs-root span.MuiTabs-indicator {background: white;height: 3px;}

@@ -27,6 +27,7 @@ a.card-movie-item img {
     border-radius: 4px;
     box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px, rgb(0 0 0 / 73%) 0px 16px 10px -10px;
     overflow: hidden;
+    opacity: 0.3;
     transition: all 0.4s ease;
 }
 
